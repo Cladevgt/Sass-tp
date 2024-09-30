@@ -1,0 +1,83 @@
+@use "token";
+
+// SECTION HEADER
+.H__container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 3em;
+    gap: 1em;
+
+    //SECTION  HEADER TOP
+    .H__top {
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    //SECTION HEADER BOTTOM
+    .H--bottom {
+        width: 100%;
+
+        .Navbar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            //  SECTION NAV LEFT
+            .Navbar--left {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                gap: 0.7em;
+                font-size: 0.9em;
+
+                // select {
+                // }
+            }
+
+            // SECTION NAV  CENTER
+            .Navbar--center {
+                flex: 2;
+
+                .List {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.7em;
+
+                    &--item {
+                        font-size: 0.9em;
+                    }
+                    &:hover{ 
+                        border-bottom: 1px solid #000;
+                        }
+                }
+
+                // SECTION  NAV RIGHT
+            }
+
+            .Navbar--right {
+                flex: 1;
+                font-size: 0.9em;
+
+                .List {
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+                    gap: 0.7em;
+
+                    &--item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        align-items: center;
+                        padding: 0.3rem;
+                        gap: 10px;
+                    }
+                   
+                }
+            }
+        }
+    }
+}

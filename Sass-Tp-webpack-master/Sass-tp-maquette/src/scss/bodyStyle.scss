@@ -1,0 +1,149 @@
+@use'token';
+
+.M__container{
+margin-left:3rem;
+margin-right:3rem;
+// display: flex;
+// justify-content: center;
+// flex-direction: column;
+.product-feature{
+    h2{
+    //    color: red;
+        };
+        .feature{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid black;
+        border-left: none;
+        border-right: none; 
+        .feature-list{
+        display: flex;
+        gap:2rem;
+        align-items: center;
+        .fa-border{
+        border: 2px solid black;
+        border-left: none;
+        border-right: none;
+        padding: 5px;
+        }
+        }
+        .feature-icons{
+        display: flex;
+        align-items: center;
+        }
+        @media  only screen and (max-width:768px){
+            font-size: 0.6rem;
+            
+        }
+        }
+        
+}
+.product-items{ 
+display: flex;
+justify-content:space-between;
+gap:1rem;
+margin-top:3rem;
+.items{
+// width:100%;
+.bolder{ 
+font-weight: bold;
+}
+.box-img{ 
+position: relative;
+display: flex;
+justify-content:stretch;
+flex-direction: column;
+display: block;
+gap:2rem;
+.promo{ 
+    top:0em;
+    position: absolute;
+    background-color: #000000b9;
+    color: #fff;
+    width: 5rem;
+    text-align: center;
+}
+    .sold{ 
+        top:3em;
+        position: absolute;
+        background-color: #000000b9;
+        color: #fff;
+        width: 5rem;
+        text-align: center;
+        }
+        .product-img{ 
+        // width: 100%;
+        object-fit: cover;
+        }
+        
+}
+}
+
+// DESCRIPTION 
+.description{
+text-align: center;
+ul{
+display: flex;
+justify-content: center;
+align-items: center;
+gap:2rem;
+text-align: center;
+.price-through{
+text-decoration: line-through;
+color: gray;
+}
+}
+}
+}
+
+// COLLECTION
+.collection--container{
+.collection-text{ 
+text-align: center;
+margin-top: 3rem;
+width: 100%;
+h2{ 
+text-transform: italic;
+}
+span{ 
+font-size: 18px;
+}
+
+.collection--items{
+width: 100%;
+.collect--img{ 
+width: 100%;
+}
+}
+}
+.weekly-container{
+    margin-top: 1rem;
+display: flex;
+justify-content: space-between;
+.weekly{ 
+flex:1;
+text-align: left;
+h5{ 
+font-family: fantasy;
+}
+h2{ 
+    font-size: 2em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+p{
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 13px;
+    width: 90%;
+}
+.img-weekly{ 
+width: 100%;
+}
+
+}
+}
+}
+}
+

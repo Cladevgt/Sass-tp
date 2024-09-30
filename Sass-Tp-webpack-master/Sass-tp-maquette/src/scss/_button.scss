@@ -1,0 +1,31 @@
+@use'token';
+@use'sass:color';
+
+@mixin button($pos){
+position:$pos;
+width: 6rem;
+bottom:8rem;
+right:28%;
+cursor: pointer;
+padding:0.3em;
+text-align: center;
+font-size: 0.5em;
+   
+}
+
+.btn--buy{
+    @include button(token.$pos);       
+    } 
+
+@mixin button--hover($bg_clr, $clr){
+background-color: $bg_clr;
+color:$clr;
+
+}
+.btn--buy:hover{
+@include button--hover(token.$gray_clr--gray, token.$clr-green)
+}
+
+.btn--buy--promo:hover{ 
+@include button(token.$background-clr--red,);
+}

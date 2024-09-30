@@ -1,0 +1,53 @@
+// @use'responsive';
+.b--section {
+display: flex;
+justify-content: space-evenly;
+flex-direction: column;
+gap:2rem;
+// SECTION BANNER  TOP
+.banner{
+    height: 60vh;
+    background-image: url("../assets/images/banniere_fleurie.png");
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size:cover; 
+    object-fit: cover;
+    position: relative;
+    // .btn__buy{ 
+    // position: absolute;
+    // width: 6rem;
+    // bottom:8rem;
+    // right:28%;
+    // cursor: pointer;
+    // padding:0.3em;
+    // text-align: center;
+    // font-size: 0.5em;
+    // @media  only screen and (max-width:768px){
+    // right:14%;
+    // width: 5rem;
+    // bottom:12rem; 
+    // }
+    // }
+    }
+    
+    .banner--articles{
+    display: flex;
+    gap:2rem;
+@media only screen and (max-width:768px){
+display: flex;
+flex-wrap: wrap;
+}      
+         .article{ 
+         flex:1;
+        .img-article{
+        object-fit: cover;
+        width:100%;
+        }
+        
+        }
+       
+        }
+};
+//SECTION BANNER BOTH ELEMENTS 
+
+
